@@ -1,0 +1,161 @@
+@font-face {
+    font-family: bebas;
+    src: url("/font/BebasKai.ttf");
+}
+.tint{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+body{
+    /*background-color: #ec6b29;*/
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content{
+    background-image: url("/img/assets/RasunaSaid.png");
+}
+
+a:hover {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a{
+    -webkit-transition: color 1s linear;
+    -moz-transition: color 1s linear;
+    -o-transition: color 1s linear;
+    transition: color 1s linear;
+    color: #000000;
+}
+
+a:hover .cv-lf-btn{
+    background-color: #ec6b29;
+    transition: all 1s;
+    color: #ffffff;
+}
+a:not(hover) .cv-lf-btn {
+    background-color: #ffffff;
+    transition: all 1s;
+    color: #000000;
+}
+a:hover .cv-lr-btn{
+    background-color: #ec6b29;
+    transition: all 1s;
+    color: #ffffff;
+}
+a:not(hover) .cv-lr-btn {
+    background-color: #ffffff;
+    transition: all 1s;
+    color: #000000;
+}
+a:hover .cv-fp-lf-hv{
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+a:not(hover) .cv-fp-lf-hv {
+    background: rgba(0, 0, 0, 0);
+    transition: all 1s;
+}
+a:hover .cv-fp-lr-hv{
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+a:not(hover) .cv-fp-lr-hv {
+    background: rgba(0, 0, 0, 0);
+    transition: all 1s;
+}
+.cv-fp-lf-hv{
+    height: 100%;
+}
+.cv-fp-lr-hv{
+    height: 100%;
+}
+.vc-fp-s50{
+    width: 50%;
+    height: 100vh;
+    cursor:pointer;
+}
+.vc-fp-s50 div{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+/*div*/
+.cv-fp-mid{
+    padding-top: 35%;
+}
+.coverage-fp-wr{
+    text-align: center;
+}
+.coverage-fp-div{
+    border-radius: 10px;
+    width:450px;
+    height:120px;
+    margin: 0px auto;
+    text-align: center;
+    font-size:35pt;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2), 3px 3px 3px 0px rgba(0,0,0.2);
+    background-color: #ffffff;
+    font-family: bebas;
+}
+.cv-mid{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Media Rule*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .coverage-fp-div{
+        width:300px;
+        height:120px;
+        font-size:30pt;
+    }
+    .cv-fp-mid{
+        padding-top: 50%;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+    .coverage-fp-div{
+        width:300px;
+        height:100px;
+        font-size:25pt;
+    }
+    .cv-fp-mid{
+        padding-top: 50%;
+    }
+}
+@media only screen and (min-width: 526px) and (max-width: 639px) {
+    .coverage-fp-div{
+        width:210px;
+        height:80px;
+        font-size:20pt;
+    }
+    .cv-fp-mid{
+        padding-top: 50%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 525px) {
+    .row{
+        display: block;
+    }
+    .coverage-fp-div{
+        width:260px;
+        height:80px;
+        font-size:20pt;
+    }
+    .cv-fp-mid{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}

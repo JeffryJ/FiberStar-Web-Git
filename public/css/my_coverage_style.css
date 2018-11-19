@@ -1,0 +1,389 @@
+@font-face {
+    font-family: bebas;
+    src: url("/font/BebasKai.ttf");
+}
+
+/*body{*/
+    /*background-color: #cccccc;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+/*}*/
+
+.content{
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("/img/assets/RasunaSaid.png");
+}
+
+.tint{
+    background-color: rgba(0,0,0,0.7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 90% 20%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.myCoverage{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.myCoverage-layer-seperator{
+    min-height: 10px;
+}
+.myCoverage-layer{
+    background-color: rgba(236,107,41,1);
+    width: 85%;
+    margin: 0 auto;
+}
+.myCoverage-layer-title{
+    font-size: 25pt;
+    color: #ffffff;
+}
+.myCoverage-layer-stage{
+    font-size: 15pt;
+    color: #ffffff;
+}
+.myCoverage-layer-info{
+    font-size: 15pt;
+    color: #ffffff;
+}
+
+.myCoverage-layer-title-selector{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.button-back{
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.button-after{
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    display: none;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+.button-after span{
+    display: inline-block;
+}
+#City{
+    display: inline;
+}
+#District{
+    display: none;
+}
+#SubDistrict{
+    display: none;
+}
+#Street{
+    display: none;
+}
+.button-back{
+    display: none;
+}
+.button-nip{
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 200px;
+    height: 60px;
+    font-size: 20pt;
+}
+.white{
+    color: #ffffff;
+}
+.coverage-locator{
+    display: none;
+}
+
+.myCoverage-layer-lat-lng{
+    color: #ffffff;
+}
+
+#Lat-Long{
+    display: none;
+}
+.you-are-in{
+    font-size: 15pt;
+    font-weight: bold;
+}
+#youHaveBeen{
+    font-size: 31pt;
+    font-family: bebas;
+    display: none;
+    color: #ffffff;
+}
+.cov-conf-title{
+    font-size: 15pt;
+}
+.cov-exit-window{
+    float: right;
+    margin-top:-13px;
+    cursor: pointer;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#travel_selector {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+    font-family: bebas;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+    /*position: absolute !important;*/
+    /*z-index: 5 !important;*/
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#pac-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 12px;
+    position:relative;
+}
+
+#pac-input, #autocomplete-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.autocomplete-suggestions{
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: 6px;
+    transform: translateX(-50%);
+    z-index: 15;
+    border: solid 1px gray;
+}
+
+.suggestion-item{
+    text-align: left;
+}
+.suggestion-item:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #000000 ;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+.coverage-form-only-title{
+    font-size: 30pt;
+    font-family: bebas;
+}
+.coverage-form-only{
+    color: #ffffff;
+    font-size: 16pt;
+    text-align: left;
+    padding-bottom: 30px;
+    display: none;
+}
+.coverage-form-only input:not([type=submit]){
+    height: 30px;
+    margin-left: -20px;
+}
+input{
+    font-size: 12pt;
+    min-width: 30px;
+}
+.coverage-form-information{
+    font-family: bebas;
+}
+.margin-right{
+    text-align: right;
+}
+.margin-middle{
+    text-align: center;
+    color: #000000;
+}
+.coverage-form-only-input{
+    margin-right: 5px;
+}
+.coverage-request-timer{
+
+    display: none;
+    color: #ffffff;
+    font-size: 25pt;
+    text-align: center;
+}
+.row{
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 1123px) and (min-width: 927px){
+    #map {
+        width: 800px;
+        height: 300px;
+    }
+    .pac-card {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 927px) and (min-width: 738px){
+    #map {
+        width: 650px;
+        height: 300px;
+    }
+    .pac-card {
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 738px) and (min-width: 568px){
+    #map {
+        width: 500px;
+    }
+    .pac-card {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 567px) and (min-width: 454px){
+    #map {
+        width: 400px;
+    }
+    .pac-card {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 453px) and (min-width: 342px){
+    #map {
+        width: 300px;
+    }
+    .pac-card {
+        width: 300px;
+    }
+    .button-after span{
+        display: block;
+    }
+}
+@media only screen and (max-width: 341px) and (min-width: 0px){
+    #map {
+        width: 250px;
+    }
+    .pac-card {
+        width: 250px;
+    }
+    .button-after span{
+        display: block;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 400px;
+    left: calc(50% - (400px/2));
+    height: 250px;
+    top: 50%;
+    margin-top: -100px;
+    background: rgb(236,107,41);
+    z-index: 20;
+}
+
+#popup2:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+}
+
+#popup2:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(236,107,41);
+    z-index: -1;
+}
